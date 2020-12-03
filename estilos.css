@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+*{
+    font-family: 'Sansita Swashed', cursive;
+}
+body{
+    padding-bottom: 300px;
+    margin:0;
+}
+
+article h3{
+    color: rgb(78, 7, 7);
+    margin:0;
+}
+
+main{
+    overflow: hidden;
+}
+
+footer,header{
+    color:white;
+    font-size: 10pt;
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*TAMAÑO PEQUEÑO*/
+@media screen and (max-width: 600px){
+    article{
+        display: flex;
+        margin: 10px;
+        justify-content: left;
+    
+    }
+    img{
+        width: 50% ;
+    }
+}
+/*TAMAÑO MEDIANO*/
+@media screen and (min-width: 600px) and (max-width: 1000px){
+
+    section{
+        text-align: center;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    div{
+        width:100%;
+    }
+    article{
+        width: 100%;
+        margin: 10px; 
+        float: left;
+    }
+    .columna1{
+       display: flex;
+        justify-content: center;
+        
+    }
+    .columna2{
+        display: flex;
+        justify-content: center;
+    }
+    article{
+        width: 100%;
+        justify-content: none;
+    }
+   
+}
+
+/*TAMAÑO GRANDE*/
+@media screen and (min-width: 1000px){
+    section{
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: left;
+    }
+    article{
+        display: flex;
+        width: 50%;
+        margin: 10px;
+        justify-content: left;
+    
+    }
+    img{
+        width: 50% ;
+    }
+    
+}
